@@ -2,56 +2,56 @@
 
 [//]: # (Screenshot)
 <p align="center">
-  <img width="270" src="URL_DE_TU_CAPTURA_ANDROID" alt="Captura Android"/>
-  <img width="320" src="URL_DE_TU_CAPTURA_IOS" alt="Captura iOS"/>
+  <img width="270" src="URL_DE_TU_CAPTURA_ANDROID" alt="Android Screenshot"/>
+  <img width="320" src="URL_DE_TU_CAPTURA_IOS" alt="iOS Screenshot"/>
 </p>
 
-## Contenido
+## Content
 
-Esta aplicación utiliza dos APIs relacionadas con gatos:
+This application utilizes two cat-related APIs:
 
-1.  **The Cat API:** Muestra imágenes de gatos. Puedes encontrar la documentación aquí: [The Cat API Documentation](https://developers.thecatapi.com/ "The Cat API Documentation").
-2.  **Fact Cat API:** Proporciona datos curiosos sobre gatos.
+1.  **The Cat API:** Displays cat images. You can find the documentation here: [The Cat API Documentation](https://developers.thecatapi.com/ "The Cat API Documentation").
+2.  **Fact Cat API:** Provides interesting facts about cats.
 
-## Configuración
+## Configuration
 
-Para utilizar la API de The Cat API, necesitarás una clave API. Puedes configurarla en las propiedades locales de tu proyecto.
+To use The Cat API, you'll need an API key. You can configure this in your project's local properties.
 
 ```properties
-apiKey="{tu-api-key}"
+apiKey="{your-api-key}"
 ```
 
-## Configuración del entorno
+## Environment Setup
 
-> **Advertencia**
-> Necesitas una Mac con macOS para escribir y ejecutar código específico de iOS en dispositivos simulados o reales.
-> Este es un requisito de Apple.
+> **Warning**
+> You need a Mac with macOS to write and run iOS-specific code on simulated or real devices.
+> This is an Apple requirement.
 
-Para trabajar con esta plantilla, necesitas lo siguiente:
+To work with this template, you'll need the following:
 
-* Una máquina con una versión reciente de macOS.
+* A machine running a recent version of macOS.
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 * [Android Studio](https://developer.android.com/studio)
-* El plugin [Kotlin Multiplatform Mobile](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile)
-* El administrador de dependencias [CocoaPods](https://kotlinlang.org/docs/native-cocoapods.html)
+* The [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile)
+* The [CocoaPods dependency manager](https://kotlinlang.org/docs/native-cocoapods.html)
 
-### Verifica tu entorno
+### Check your environment
 
-Antes de comenzar, utiliza la herramienta [KDoctor](https://github.com/Kotlin/kdoctor) para asegurarte de que tu entorno de desarrollo esté configurado correctamente:
+Before you start, use the [KDoctor](https://github.com/Kotlin/kdoctor) tool to ensure your development environment is correctly configured:
 
-1.  Instala KDoctor con [Homebrew](https://brew.sh/):
+1.  Install KDoctor with [Homebrew](https://brew.sh/):
 
     ```text
     brew install kdoctor
     ```
 
-2.  Ejecuta KDoctor en tu terminal:
+2.  Run KDoctor in your terminal:
 
     ```text
     kdoctor
     ```
 
-    Si todo está configurado correctamente, verás una salida válida:
+    If everything is set up correctly, you'll see valid output:
 
     ```text
     Environment diagnose (to see all details, use -v option):
@@ -65,9 +65,9 @@ Antes de comenzar, utiliza la herramienta [KDoctor](https://github.com/Kotlin/kd
         ✓ Your system is ready for Kotlin Multiplatform Mobile development!
     ```
 
-    De lo contrario, KDoctor resaltará qué partes de tu configuración aún necesitan ser configuradas y sugerirá una forma de solucionarlas.
+    Otherwise, KDoctor will highlight which parts of your setup still need to be configured and suggest a way to fix them.
 
-## Dependencias
+## Dependencies
 
 ```toml
 [versions]
